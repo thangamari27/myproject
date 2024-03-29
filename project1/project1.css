@@ -1,0 +1,262 @@
+html{
+	scroll-behavior: smooth;
+	transition: all 12s ease;
+
+}
+html::-webkit-scrollbar{
+	display: none;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+
+}
+body{
+	height: 100vh;
+	width: 100vw;
+}
+#nav_con{
+	background-color: #000;
+	width: 100%;
+	height: 45px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+#nav_con > h3{
+	padding: 10px;
+	color: gray;
+	font-size: 15px;
+	display: inline-block;
+}
+#navbar_icon{
+	display: flex;
+	cursor: pointer;
+
+}
+#navbar_icon .nav_icon{
+	color: #000;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 5px;
+	height: 35px;
+	width: 40px;
+	border: 2px solid #fff;
+	border-radius: 80%;
+	margin-left: 10px;
+	text-align: center;
+	background-color: #fff;
+
+}
+#navbar{
+	height: 50px;
+	width: 100%;
+	background-color: blue;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.brand_name{
+	display: inline-block;
+}
+.brand_name{
+	padding: 5px;
+}
+.brand_name > h2{
+	padding: 5px
+}
+.brand_name > h2 >a{
+	color: white;
+	text-decoration: none
+}
+.nav_menu{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: center;
+
+}
+.nav_menu > li{
+	margin: 15px;
+	list-style: none;
+	transition: all 1s ease;
+}
+.nav_menu >li:hover{
+	transform: scale(1.2);
+}
+.nav_menu >li .nav_list{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+
+}
+.nav_menu >li .nav_list:hover{
+	
+	color: greenyellow;
+}
+#page1{
+	width: 100%;
+	height: 500px;
+}
+#image{
+	height: 300px;
+	width: 100%;
+	transition: all 10s ease;
+}
+
+.img1{
+
+	background: linear-gradient(rgba(0,0,0,0.7578),rgba(0,0,0,0.7498)), url("sourse/motorcycle-kawasaki-kawasaki-ninja-h2r-wallpaper-preview.jpg") ;
+	
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: rgb(0,0,0,0.32);
+
+}
+.img1:nth-child(1){
+
+	text-shadow: 2px 2px 1px green;
+}
+
+.title1{
+	padding: 10px;
+	
+	font-size: 30px;
+	font-weight: 600;
+	transition: all 1s ease;
+}
+.title1:hover{
+	transform: scale(1.2);
+}
+.para1{
+	padding: 10px;
+	color: greenyellow;
+	font-size: 18px;
+	transition: all 1s ease-in-out;
+
+}
+.para1:hover{
+	transform: scale(1.2);
+}
+#page2{
+	height: 500px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	place-items:center;
+
+}
+.content_page2 > h4{
+	font-size: 40px;
+	padding: 5px;
+	color: lightgreen;
+}
+.content_page2 > p{
+	font-size:17px;
+	padding: 5px; 
+	color: gray;
+}
+.content_page2 .btn1{
+	/*padding: 10px 30px;*/
+	font-size: 15px;
+	font-weight: 600;
+	height: 45px;
+	width: 140px;
+	border-radius: 100px;
+	border: 2px solid green;
+
+}
+.content_page2 .btn2{
+	/*padding: 10px 30px;*/
+	font-size: 15px;
+	font-weight: 600;
+	height: 45px;
+	width: 140px;
+	border-radius: 100px;
+	background-color: lightgreen;
+	
+}
+.image_page2{
+
+	background: url("sourse/motorcycle-kawasaki-kawasaki-ninja-h2r-wallpaper-preview.jpg");
+
+	height: 90%;
+	width: 90%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat; 
+	animation: mypic 5s infinite;
+}
+#footer_page{
+	height: 50vh;
+	width: 100%;
+	background: black;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+.contact_info{
+	padding: 30px;
+	line-height: 40px;
+}
+.contact_info > h3 >a{
+	text-decoration: none;
+	color: white;
+}
+.contact_info > h4 >a{
+	text-decoration: none;
+	color: white;
+}
+.contact_info > h5 >a{
+	text-decoration: none;
+	color: white;
+}
+.web_short{
+	padding: 30px;
+	line-height: 40px;
+}
+.web_short > ul >li{
+	list-style-type: none;
+}
+.web_short > ul >li > a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+}
+.foot_image{
+	padding: 30px;
+}
+
+.foot_image > h3{
+	color: white;
+	background-color: lightgreen;
+	height: 40px;
+	width: 380px;
+	border-radius: 100px;
+	text-align: center;
+	padding: 10px
+
+}
+.bike_image{
+	margin: none;
+	background: url("sourse/motorcycle-kawasaki-kawasaki-ninja-h2r-wallpaper-preview.jpg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 90%;
+	width: 90%;
+}
